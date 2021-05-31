@@ -17,9 +17,9 @@ instagram = r.html.find('a.instagram')
 
 #loop through those elements extracting the text and link
 for item in instagram:
-##    instagram = {
-##        'name': item.text,
-##        'link': item.absolute_links
-##    }
+    instagram = {
+        'name': item.text,
+        'link': item.absolute_links
+    }
         print(item)
 
