@@ -21,5 +21,5 @@ for item in instagram:
         'name': item.text,
         'link': item.absolute_links
     }
-        print(item)
+    print(item)
 
