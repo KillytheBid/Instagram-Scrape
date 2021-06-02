@@ -1,0 +1,29 @@
+{
+    "name": "powerlifting-site",
+    "version": "1.0.0",
+    "description": "Uses API to populate instagram, name and wilks",
+    "main": "app.js",
+    "scripts": {
+        "start": "node bin/server.js",
+        "dev": "nodemon bin/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/KillytheBid/Powerlifting-Site.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/KillytheBid/Powerlifting-Site/issues"
+    },
+    "homepage": "https://github.com/KillytheBid/Powerlifting-Site#readme",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
