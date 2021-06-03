@@ -1,6 +1,6 @@
 # <p align="center">powerlifting-site</p>
 
-Uses API to populate instagram, name and wilks
+<p align='center'>Uses API to populate instagram, name and wilks</p>
 
 # Development
 1. Install NodeJs on your computer. After installing NodeJs, open up terminal and type in the following command to clone this project repository.
