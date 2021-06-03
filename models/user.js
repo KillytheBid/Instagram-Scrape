@@ -1,6 +1,6 @@
 const axios = require('axios');
 const url = 'https://www.openpowerlifting.org/api/rankings?start=1&end=100&lang=en&units=lbs';
-const list = [];
+const users = [];
 
 class User {
     static async fetchAllUsers() {
@@ -28,11 +28,11 @@ class User {
                         total: i[22],
                     };
 
-                    list.push(profile);
+                    users.push(profile);
                 }
             }
 
-            return list;
+            return users;
         } catch (error) {
             console.log({ error: error });
         }

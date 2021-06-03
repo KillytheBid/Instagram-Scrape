@@ -16,13 +16,21 @@
 
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <% for (let user of list) { %>
+            <% for (let user of users) { %>
                 <div class="col">
                     <div class="card h-100">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><%= user.name %></h5>
-                        <p class="card-text">Total: <%= user.total %> </p>
+                        <p class="card-text">
+                            Sex: <%= user.sex %><br>
+                            Class: <%= user.class %><br>
+                            Weight: <%= user.weight %><br>
+                            Squat: <%= user.squat %><br>
+                            Bench: <%= user.bench %><br>
+                            Deadlift: <%= user.deadlift %><br>
+                            Total: <%= user.total %>
+                         </p>
                         <a href="https://www.instagram.com/<%= user.instagram %>" class="btn btn-primary">instagram</a>
                     </div>
                     </div>
