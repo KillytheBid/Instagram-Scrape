@@ -13,12 +13,18 @@
     ````
     cd powerlifting-site
     ````
-3. Once we are inside the project folder, use the following commands to start your dev server.
+3. Once we are inside the project folder, install project dependencies by typing the following commands below.
+
+    ````
+    npm install
+    ````
+
+4. After installing dependencies, use the following commands to start your dev server.
    
     ````
     npm run dev
     ````
-4. After starting the server, you can open up a browser and visit at following link.
+5. After starting the server, you can open up a browser and visit at following link.
   
    ````
    http://localhost:3000
