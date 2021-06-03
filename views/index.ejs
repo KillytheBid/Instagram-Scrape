@@ -15,45 +15,59 @@
 
 <style>
     html {
-    margin-top: 100px;
-}
+        margin-top: 100px;
+    }
 
-body {
-    background-color: #eeeeee;
-}
+    body {
+        background-color: #eeeeee;
+    }
+    
+    footer {
+        margin-top: 50px;
+    }
 
-.container {
-    margin-bottom: 100px;
-}
+
 
 </style>
 
 <body>
 
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-5 g-4">
-            <% for (let user of users) { %>
-                <div class="col">
-                    <div class="card h-100">
-                    <img src="https://dummyimage.com/500x500/585f63/fff" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><%= user.name %></h5>
-                        <p class="card-text">
-                            Sex: <%= user.sex %><br>
-                            Class: <%= user.class %><br>
-                            Weight: <%= user.weight %><br>
-                            Squat: <%= user.squat %><br>
-                            Bench: <%= user.bench %><br>
-                            Deadlift: <%= user.deadlift %><br>
-                            Total: <%= user.total %>
-                         </p>
-                        <a href="https://www.instagram.com/<%= user.instagram %>" class="btn btn-primary" target="_blank">instagram</a>
+    <main>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-5 g-4">
+                <% for (let user of users) { %>
+                    <div class="col">
+                        <div class="card h-100">
+                        <img src="https://dummyimage.com/500x500/585f63/fff" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= user.name %></h5>
+                            <p class="card-text">
+                                Sex: <%= user.sex %><br>
+                                Class: <%= user.class %><br>
+                                Weight: <%= user.weight %><br>
+                                Squat: <%= user.squat %><br>
+                                Bench: <%= user.bench %><br>
+                                Deadlift: <%= user.deadlift %><br>
+                                Total: <%= user.total %>
+                            </p>
+                            <a href="https://www.instagram.com/<%= user.instagram %>" class="btn btn-primary" target="_blank">instagram</a>
+                        </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
-            <% } %>
+                <% } %>
+            </div>
         </div>
-    </div>
+    </main>
+
+
+    <footer class="text-muted py-5">
+        <div class="container">
+          <p class="float-end mb-1">
+            <a href="https://github.com/KillytheBid/Powerlifting-Site/" target="_blank">view on github</a>
+          </p>
+          <p class="mb-1">All rights reserved. © 2021 powerlifting-site.</p>
+        </div>
+      </footer>
 
 </body>
 
