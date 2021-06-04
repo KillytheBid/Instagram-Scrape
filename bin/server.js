@@ -1,10 +1,11 @@
 const app = require('../app.js');
-const port = 3000;
+const config = require('../config/config.js');
+const PORT = config.port;
 
-app.listen(port, (err) => {
+app.listen(PORT, (err) => {
     if (err) {
-        console.log(err);
+        console.log({ err: err });
     }
 
-    console.log(`Server started on http://localhost:${port}`);
+    console.log(`Server started on http://localhost:${PORT}`);
 });
